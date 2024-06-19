@@ -9,6 +9,7 @@ az group create --name $resourcegroup --location $location
 az vm create --resource-group $resourcegroup `
 --name $vmname `
 --image Win2022AzureEditionCore `
+--size Standard_DS2_v2 `
 --public-ip-sku Standard `
 --admin-username $username `
 --admin-password $userpassword
